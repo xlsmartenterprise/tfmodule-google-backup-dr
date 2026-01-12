@@ -15,7 +15,7 @@ Terraform module for managing Google Cloud Backup and DR resources including bac
 ### Basic Example
 ```hcl
 module "backup_dr" {
-  source = "./tfmodule-google-backup-dr"
+  source = "github.com/xlsmartenterprise/tfmodule-google-backup-dr"
 
   project_id                                 = "my-project"
   region                                     = "us-central1"
@@ -41,7 +41,7 @@ module "backup_dr" {
 ### Hourly Backup Example
 ```hcl
 module "backup_dr_hourly" {
-  source = "./tfmodule-google-backup-dr"
+  source = "github.com/xlsmartenterprise/tfmodule-google-backup-dr"
 
   project_id                                 = "my-project"
   region                                     = "us-central1"
